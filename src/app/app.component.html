@@ -1,9 +1,3 @@
-<p [ngClass]="{ 'col-red': inc == 1 , 'col-blue': inc == 2, 'col-black': inc == 0 }">
-	{{ inc == 1 ? 'W' : ( inc == 2 ? 'R' : 'A' ) }}
-</p>
-<div [ngSwitch]="inc">
-	<p class="col-red" *ngSwitchCase="'1'">W</p>
-	<p class="col-blue" *ngSwitchCase="2">R</p>
-	<p class="col-black" *ngSwitchCase="3">B</p>
-	<p *ngSwitchDefault>A</p>
-</div>
+<app-test [(data)]="inc"></app-test>
+<input [(ngModel)]="inc" />
+{{inc}}
