@@ -7,12 +7,7 @@ import { Component, VERSION } from "@angular/core";
 })
 export class AppComponent {
   inc: any = 1;
-  incs() {
-    if (true) {
-    } else {
-      if (true) {
-      } else {
-      }
-    }
+  show(e) {
+    console.log(e)
   }
 }

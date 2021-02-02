@@ -1,3 +1,3 @@
-<app-test [(data)]="inc"></app-test>
+<app-test [data]="inc" (demo)="show($event)" [demo1]="inc"></app-test>
 <input [(ngModel)]="inc" />
 {{inc}}
